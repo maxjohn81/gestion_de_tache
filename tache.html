@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de tache</title>
+    <link rel="stylesheet" href="css/tache.css">
+</head>
+<header>
+    <div class="navbar">
+        <h1>Gestionaire de tache</h1>
+        <div class="theme_container">
+            <div id="corps">
+                <div id="boule"></div>
+            </div>
+            <div id="theme">Sombre</div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div id="navbarTache">
+        <div class="tache">
+            <h4>Total taches : <div id="totalTache" style="margin-left: 5px;">0</div>
+            </h4>
+        </div>
+        <div class="tache">
+            <h4>A faire : <div id="tache1" style="margin-left: 5px;">0</div>
+            </h4>
+        </div>
+        <div class="tache">
+            <h4>En cours : <div id="tache2" style="margin-left: 5px;">0</div>
+            </h4>
+        </div>
+        <div class="tache">
+            <h4>Terminées : <div id="tache3" style="margin-left: 5px;">0</div>
+            </h4>
+        </div>
+        <div class="tache rr">
+            <h4>Progression : </h4>
+            <div class="containerLoad" style="display: flex;margin-top: 29px;margin-left: 5px;">
+                <div id="bar">
+                    <div id="progress"></div>
+                </div>
+                <div class="containerCiffre" style="margin-left: 5px;transform: translateY(-8px);"><span id="loadCount"
+                        style="font-weight: bold;">0</span><span style="font-weight: bold;">%</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="containerTotal">
+        <div>
+            <h2>Tous</h2>
+        </div>
+    </div>
+
+    <div id="containerTache">
+        <div id="container1">
+            <h1 class="title">A faire</h1>
+            <ul id="dataBase1"></ul>
+            <div class="dataAdd">
+                <input type="text" id="taskInput1" placeholder="Ajouter...">
+                <button class="bouton1" onclick="addTask1()">Ajouter</button>
+            </div>
+        </div>
+        <div id="container2">
+            <h1 class="title">En cours</h1>
+            <ul id="dataBase2"></ul>
+            <div class="dataAdd">
+                <input type="text" id="taskInput2" placeholder="Ajouter...">
+                <button class="bouton2" onclick="addTask2()">Ajouter</button>
+            </div>
+        </div>
+        <div id="container3">
+            <h1 class="title">Terminées</h1>
+            <ul id="dataBase3"></ul>
+            <div class="dataAdd">
+                <input type="text" id="taskInput3" placeholder="Ajouter...">
+                <button class="bouton3" onclick="addTask3()">Ajouter</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/tache.js"></script>
+
+</html>
